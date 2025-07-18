@@ -87,7 +87,7 @@ ggplot() +
 
 # Process TB (catch info)
 TB <- TB |> mutate(
-  kg = ptot / 100,
+  kg = ptot / 1000, # it's in grams
   n_individuals = nbtot
 )
 
